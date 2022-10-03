@@ -473,7 +473,7 @@ sudo apt-get --yes install unzip htop expect bc telnet s3cmd mercurial
 # then
     # $SCRIPTPATH/utils/downloadtestgz.sh $ECLIPSE_SOURCE_HOSTPATH $ECLIPSE_SOURCE_FILENAME $OSUSER_HOME/dev/downloads || exit 1
     #Note: if you already have a downloaded copy of iDempiere's hg repo zip, update the following URL
-     $SCRIPTPATH/utils/downloadtestzip.sh https://master.dl.sourceforge.net/project/idempiere/v9/source-repo/idempiere_gitrepo_v9.zip idempiere-hg-download.zip $OSUSER_HOME/dev/ || exit 1
+     $SCRIPTPATH/utils/downloadtestzip.sh https://s3.amazonaws.com/ChuckBoecking/install/ idempiere-hg-download.zip $OSUSER_HOME/dev/ || exit 1
     # mv $OSUSER_HOME/dev/idempiere-hg-download.zip $OSUSER_HOME/dev/download.zip
     # if [ $? -ne 0 ]; then { echo "HERE: Can't rename $OSUSER_HOME/dev/idempiere-hg-download.zip" ; exit 1 ; } fi
 # fi
